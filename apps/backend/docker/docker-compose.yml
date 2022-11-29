@@ -1,0 +1,11 @@
+
+
+services:
+  wordpress:
+    container_name: wordpress
+    build: images/wordpress
+    tty: true
+    volumes:
+      - ../:/var/www/html
+    ports:
+      - "80:80"
